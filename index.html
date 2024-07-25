@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Prediction game</title>
+    <link rel="icon" href="./perdiction.jpeg">
+
+</head>
+
+<body>
+    <!-- Heading -->
+    <div class="navbar navbar-dark bg-primary d-flex align-items-center  text-light fs-5 p-2 w-100">
+        <a href="" class="text-light text-decoration-none">
+            <div class="arrow "><i class="fa-solid fa-less-than"></i></div>
+        </a>
+        <div class="title">Fast-Parity</div>
+        <div class="rule text-end" id="rule"><a href="#" class="text-light text-decoration-none">Rule</a></div>
+    </div>
+
+    <!-- End Header -->
+
+
+    <!-- body-1 -->
+    <div class="mt-1 w-100">
+        <div class="row row-cols-2 d-flex justify-content-between align-items-center w-100">
+            <div class="col-4 ps-4 mt-1" id="periodDiv">
+                <p class="fw-light text-secondary m-0" id="para1">Period</p>
+                <p class="text-dark fw-bolder" id="idNo"></p>
+            </div>
+            <div class="col-3 d-flex flex-column  align-items-center justify-content-center" id="timmer">
+                <div class="d-flex  align-items-center" id="counter">
+                    <span class="text-secondary text-center mb-1">Count Down</span>
+                </div>
+
+                <div class="d-flex">
+                    <div id="min" class="d-flex w-100">
+                        <span class="border border-1 p-md-2 p-1 m-1 rounded-1" style="background-color: #dddcff;"
+                            id="min1">0
+                        </span>
+                        <span class="border border-1 m-1 p-md-2 p-1 rounded-1"
+                            style="background-color: #dddcff;" id="min2">0
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center w-100">:</div>
+                    <div id="sec" class="d-flex">
+                        <span class="border border-1 p-md-2 p-1 m-1 rounded-1" style="background-color: #dddcff;"
+                            id="sec1">0</span>
+                        <span class="border border-1 p-md-2 p-1 m-1 rounded-1" style="background-color: #dddcff;"
+                            id="sec2">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End body-1 -->
+
+    <!-- body-2 -->
+
+    <div class="container position-relative">
+        <div class="row row-cols-3 d-flex p-2">
+            <div class="col-4 p-0">
+                <button class="border-0 w-100 p-1 bg-transparent" id="btn1">
+                    <div class="d-flex flex-column text-light fs-4 rounded-4 p-1 w-100" id="p1"
+                        style="background-color: rgb(7, 124, 13)" ;>
+                        <div>
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div>
+                            <p class="m-0" id="j1">Join Green</p>
+                        </div>
+                    </div>
+                </button>
+                    <div class="text-secondary text-center pe-1" id="value">1:2</div>
+                
+            </div>
+
+            <div class="col-4 p-0">
+                <button class="border-0 w-100 p-1 bg-transparent" id="btn2">
+                    <div class="d-flex flex-column text-light fs-4 rounded-4 p-1"
+                        style="background-color: rgb(103, 22, 196);" id="p2">
+                        <div>
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div>
+                            <p class="m-0" id="j2">Join Violet</p>
+                        </div>
+                    </div>
+                </button>
+                    <div class="text-secondary text-center pe-1" id="value">1:4:5</div>
+                
+            </div>
+
+            <div class="col-4 p-0">
+                <button class="border-0 w-100 p-1 bg-transparent" id="btn3">
+                    <div class="d-flex flex-column  text-light fs-4 rounded-4 p-1" id="p3"
+                        style="background-color: red;">
+                        <div>
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div>
+                            <p class="m-0" id="j3">Join Red</p>
+                        </div>
+                    </div>
+                </button>
+                    <div class="text-secondary text-center pe-1" id="value">1:2</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End body-2 -->
+
+    <!-- body-3 -->
+
+    <div class="container">
+        <div class="row row-cols-5  g-2 text-center fw-bold" id="numbers">
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers1" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">1</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers2" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">2</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers3" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">3</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers4" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">4</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers5" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">5</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers6" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">6</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers7" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">7</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers8" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">8</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers9" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">9</div>
+                </div>
+            </button>
+            <button class="border-0 bg-transparent">
+                <div class="col name" id="numbers10" style="border: 1px solid #96C9F4;
+            background-color: #c6e5ff;">
+                    <div class="p-md-2 p-1">0</div>
+                </div>
+            </button>
+        </div>
+        <div class="text-center text-secondary" id="value">
+            <p>1:9</p>
+        </div>
+    </div>
+    <!-- End body-3 -->
+
+    <!-- body-4 -->
+
+    <div class="container" style="height: 400px;">
+        <div class="border-4 border-bottom border-primary text-center fw-bold p-2"
+            style="box-shadow: 0 4px 8px rgba(0,0,0,0.2) inset;" id="rec">
+            Record
+        </div>
+        <div class=" d-flex justify-content-between align-content-between p-2">
+            <div id="rec">Fast-Parity Record(s)</div>
+            <div><a href="#" class="text-decoration-none text-secondary" id="numbers">more></a></div>
+        </div>
+
+        <div class="row row-cols-10 ms-md-2 ms-1 ps-md-3 p-1" id="r1">
+
+        </div>
+
+    </div>
+    <!-- End body-4 -->
+
+    <!-- body-5 -->
+    <div class="container" style="height:375px;">
+        <div class="row">
+            <div class="border-4 border-bottom border-primary  p-2 text-center fw-bold"
+                style="box-shadow: 0 4px 8px rgba(0,0,0,0.2) inset;" id="rec">
+                My order
+            </div>
+            <div class="text-center w-100 bg-black p-0">
+                <table class="table table-borderless m-0">
+                    <tr>
+                        <td>Period</td>
+                        <td>Select</td>
+                        <td>Result</td>
+                        <td>Status</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ps-3" id="selected">
+
+
+            </div>
+        </div>
+        <!-- End body-5 -->
+    </div>
+    <!-- pop up -->
+
+    <div id="messageBox" class="message-box">
+        <button class="bg-danger border-0 text-light" id="cancel">x</button>
+        <h3 class="text-dark m-2" id="message"></h3>
+        <button class="btn btn-lg btn-success m-2" id="join">confirm</button>
+    </div>
+
+    <!-- End pop up -->
+
+    <!-- Win Message -->
+    <div id="winBox" class="win-box">
+        <h1><i class="fa-solid fa-trophy text-warning"></i></h1>
+        <br>
+        <div id="winColor" class="d-flex align-item-center justify-content-center"></div>
+        <br>
+        <h4>WIN</h4>
+        <br>
+        <h6>Your Guess is Correct</h6>
+    </div>
+    <!-- End Win -->
+
+    <!-- Lose Message -->
+    <div id="loseBox" class="lose-box">
+        <h1><i class="fa-solid fa-circle-exclamation text-warning"></i></h1>
+        <br>
+        <div id="loseColor" class="d-flex align-item-center justify-content-center"></div>
+        <br>
+        <h4>LOSE</h4>
+        <br>
+        <h6>Guess Again</h6>
+    </div>
+    <!-- End Lose -->
+
+
+    <!-- Rule -->
+    <div id="ruleBox" class="rule-box">
+        <div  class="border-1 border-primary bg-primary text-center w-50 text-light p-1" style="margin-left: 25%;border-radius: 20px;box-shadow: 1px 1px 1px 1px rgb(16, 69, 243);" id="rule1">FastParity Rule</div>
+        <div class="mt-2">
+            <p>30 seconds 1 issue, 20 seconds to order,10 seconds to show the result status. It opens all day.</p>
+            <p>
+                If you click to join:
+                <ul>
+                    <li>JOIN GREEN:if the result shows 1,3,5,7,9,you will win; otherwise you lose.</li>
+                    <li>JOIN RED:if the result shows 0,2,4,6,8,you will win;otherwise you lose.</li>
+                    <li>JOIN VIOLET:if the result like half of an violet only.if your guess is Correct,you will win.</li>
+                    <li>JOIN NUMBERS:if the result shows like a number.your selected number is equal to result,yo will win.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- End Rule -->
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/c5494f3f35.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 670px; /* Fixed width */
+    height: 900px;
+    margin: auto; /* Center the body horizontally */
+    background-color: #fff; /* Optional: background color for the body */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navbar{
+    width: 100%;
+}
+
+#numbers{
+    font-size: 20px;
+}
+
+#rec{
+    font-size: 25px;
+}
+
+#r1{
+    width: 100%;
+    height: 220px;
+}
+
+.message-box {
+width: 350px;
+height: 200px;
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+background-color: white;
+color: white;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+align-content: center;
+z-index: 1000;
+/* position: relative; */
+}
+
+#cancel{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    text-align: center;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+
+
+#pre1{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultdiv{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+#period{
+    text-align: center;
+}
+
+
+#rv{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;           
+}
+
+.resultDiv{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#p-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-box{
+    width: 350px;
+    height: 300px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    align-content: center;
+    z-index: 1000;
+}
+
+.lose-box {
+    width: 350px;
+    height: 300px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    align-content: center;
+    z-index: 1000;
+}
+
+.rule-box {
+    width: 350px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* text-align: center;
+    align-content: center; */
+    z-index: 1000;
+    /* position: relative; */
+    }
+
+#para1{
+    font-size: 25px;
+}
+#idNo{
+    font-size: 25px;
+}
+
+
+@media (max-width:425px){
+    body{
+        width: 100%;
+    }
+
+    #timmer{
+        font-size: xx-small;
+        
+    }
+    #para1{
+        font-size: 15px;
+    }
+
+    #idNo{
+        font-size:15px;
+    }
+
+    #j1,#j2,#j3{
+        font-size: 15px;
+    }
+    #value,#numbers{
+        font-size: 10px;
+    }
+
+    #rec{
+        font-size: 15px;
+    }
+
+    #pre1{
+        width: 34px;
+        height: 34px;
+        font-size: small;
+    }
+    
+    #resultdiv{
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+    }
+    
+    #period{
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    
+    #rv{
+        width: 20px;
+        height: 20px;
+        font-size: 11px;          
+    }
+    
+    .resultDiv{
+        width: 20px;
+        height: 20px;
+        font-size: 11px;  
+    }
+    #p-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .win-box{
+        width: 175px;
+        height: 175px;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        align-content: center;
+        z-index: 1000;
+        font-size: 1px;
+    }
+    
+    .lose-box {
+        width: 175px;
+        height: 175px;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        align-content: center;
+        z-index: 1000;
+        font-size: 1px;
+    }
+    .message-box {
+        width: 195px;
+        height: 175px;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: white;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        align-content: center;
+        z-index: 1000;
+    }
+
+    .rule-box {
+        width: 200px;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        /* text-align: center;
+        align-content: center; */
+        z-index: 1000;
+        /* position: relative; */
+        font-size: 12px;
+    }
+    .rule-box #rule1{
+        padding: 0;
+        font-size: 11px;
+    }
+    
+}
+
+
+@media (max-width:320px){
+    #pre1{
+        width: 30px;
+        height: 34px;
+        font-size: 12px;
+    }
+}
